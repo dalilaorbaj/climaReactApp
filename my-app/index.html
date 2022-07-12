@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>    
+    <nav>
+        <div class="nav-wrapper light-blue darken-2">
+            <a href="#!" class="brand-logo">Clima React APP</a>
+        </div>
+    </nav>
+    <div class="contenedor-form">
+        <div class="container">
+            <div class="row">
+                <div class="col m6 s12">
+                    <form>
+                        <div class="input-field col s12">
+                            <input 
+                                type="text"
+                                name="ciudad"
+                                id="ciudad"                                    
+                            />
+                            <label htmlFor="ciudad">Ciudad:</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select name="pais" id="pais">
+                                <option value="">-- Seleccion un Pais --</option>
+                                <option value="US">Estados Unidos</option>
+                                <option value="MX">México</option>
+                                <option value="AR">Argentina</option>
+                                <option value="CO">Colombia</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="ES">España</option>
+                                <option value="PE">Perú</option>
+                            </select>
+                            <label htmlFor="pais">Pais:</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input 
+                                type="submit"
+                                value="Buscar Clima"
+                                class="waves-effect waves-light btn-large btn-block yellow accent-4"
+                            />
+                        </div>
+                    </form>
+                </div>
+                <div class="col m6 s12">
+                    <div class="card-panel white col s12">
+                        <div class="black-text">
+                            <h2>El clima de Buenos Aires es:</h2>
+                            <p class="temperatura">
+                                23.29 <span> &#x2103; </span>
+                            </p>
+                            <p>
+                                Temperatura Maxima
+                                25.57 <span> &#x2103; </span>
+                            </p>
+                            <p>
+                                Temperatura Minima
+                                21.85 <span> &#x2103; </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elementos = document.querySelectorAll('select');
+          M.FormSelect.init(elementos);
+        });
+    </script>
+</body>
+</html>

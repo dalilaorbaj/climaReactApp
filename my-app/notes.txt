@@ -1,0 +1,10 @@
+integracion con una api de clima, le pasamos el nombre de la ciudad y el pais
+
+- crear carpeta
+- lineas: 
+npx create-react-app my-app
+cd my-app
+npm start
+- poner codigo html en app
+- reemplazar los class= por className=
+- npm i axios
