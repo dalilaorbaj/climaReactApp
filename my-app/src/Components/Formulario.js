@@ -1,7 +1,8 @@
 import '../App.css';
-import React from 'react';
+import React, {useState} from 'react';
 
-export default function Formulario({setFiltro, filtro}) {
+
+export default function Formulario() {
     
     const [filtro, setFiltro] = useState('');
 
@@ -13,6 +14,12 @@ export default function Formulario({setFiltro, filtro}) {
         //aca hay que validar que esten todos los campos obligatorios bien
         //si esta todo ok --> 
         setBuscar(true);
+    }
+
+    const setBuscar = (todoOk) =>{
+        if(todoOk){
+            
+        }
     }
 
     return (
