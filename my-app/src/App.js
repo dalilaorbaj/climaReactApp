@@ -13,10 +13,10 @@ function App() {
   useEffect(async () =>  {
     const consultarAPI = async () =>{
       if(fetch){
-      let response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q={ciudad},{pais}&APPID=467eb2e2a1738c82e813a30610d7c354`)
-      setResponse(response.data)
-      setFetch(false)
-    }
+        let response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q={ciudad},{pais}&APPID=467eb2e2a1738c82e813a30610d7c354`)
+        setResponse(response.data)
+        setFetch(false)
+      }
     }
     consultarAPI() /*hay que hacer la funcion de consultarAPI*/
   }, [fetch]
